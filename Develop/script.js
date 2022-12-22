@@ -14,12 +14,25 @@
 
 function generatePassword() {
   var passwordLength = prompt("Choose length of password. Enter a number between 8 - 128 characters");
+
+  if (passwordLength <= 7 || passwordLength >=129 || isNaN(passwordLength)) {
+    alert("Your password must be between 8 and 128 characters.");
+    return(textcontent[placeholder])
+  };
+
   var lowerCase = confirm("Click ok to use lowercase characters in your password.");
   var upperCase = confirm("Click OK to use uppercase characters in your password.");
   var numeric = confirm("Click OK to use numeric characters in your password.");
   var specialChars = confirm("Click OK to use special characters in your password.");
   var chars = "";
   var genPassword = "";
+
+  if (lowerCase === false && upperCase === false && numeric === false && specialChars === false) {
+    alert("Your password must include at least one character type.");
+    return(textcontent.placeholder)
+  };
+
+  
 }
 
 // Get references to the #generate element
