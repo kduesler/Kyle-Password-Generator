@@ -48,7 +48,12 @@ function generatePassword() {
     chars += "!@#$%^&*()_+?><:"
   };
 
-  
+  for (let i = 0; i < passwordLength; i++) {
+    const randomChars = chars[Math.floor(Math.random() * chars.length)];
+    genPassword = genPassword + randomChars;
+  }
+
+  return genPassword;
 }
 
 // Get references to the #generate element
