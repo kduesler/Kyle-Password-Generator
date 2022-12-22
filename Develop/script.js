@@ -32,6 +32,22 @@ function generatePassword() {
     return(textcontent.placeholder)
   };
 
+  if (lowerCase === true) {
+    chars = "abcdefghijklmnopqrstuvwxyz";
+  };
+ 
+  if (upperCase === true) {
+    chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  };
+
+  if (numeric === true) {
+    chars += "1234567890"
+  };
+
+  if (specialChars === true) {
+    chars += "!@#$%^&*()_+?><:"
+  };
+
   
 }
 
