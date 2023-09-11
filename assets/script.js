@@ -20,10 +20,10 @@ function generatePassword() {
     return(textcontent[placeholder])
   };
 
-  var lowerCase = confirm("Click OK to use lowercase characters in your password.");
-  var upperCase = confirm("Click OK to use uppercase characters in your password.");
-  var numeric = confirm("Click OK to use numeric characters in your password.");
-  var specialChars = confirm("Click OK to use special characters in your password.");
+  var lowerCase = confirm("Click OK to use lowercase characters in your password. Click cancel to avoid the use of lowercase characters.");
+  var upperCase = confirm("Click OK to use uppercase characters in your password. Click cancel to avoid the use of uppercase characters.");
+  var numeric = confirm("Click OK to use numeric characters in your password. Click cancel to avoid the use of numberic characters.");
+  var specialChars = confirm("Click OK to use special characters in your password. Click cancel to avoid the use of special characters.");
   var chars = "";
   var genPassword = "";
 
